@@ -13,3 +13,12 @@ write these code in package.json/script
 	"dev": "nodemon ./src/main.ts",
  	"format": "prettier --write",
         "lint-fix": "eslint --ignore-path .eslintigonore . --fix"
+
+install 
+npm install @prisma/client --- in dependencies
+npm install -D prisma --- in devDependencies
+npx prisma init --datasource-provider postgresql
+ npx prisma generate
+ ---to sync prisma and database---
+ npx prisma migrate dev -- to sync database to pgadmin
+ default username for postgres is postgres
